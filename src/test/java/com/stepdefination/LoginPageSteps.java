@@ -28,27 +28,16 @@ SearchHotelPage SearchHotelPage;
 	@When("I should enter invalid {string} and {string}")
 	public void i_should_enter_invalid_and(String userName, String passWord) {
 		LoginPage l =new LoginPage();
-l.login(userName, passWord);
+        l.login(userName, passWord);
 	}
 
 	@When("user should serach hotel  using {string},{string},{string},{string},{string},{string},{string},{string}")
-	public void user_should_serach_hotel_using(String location,String hotel ,String roomType  , int nroomnos, String checkinDate , String checkOutDate, String adultsPerRooms,String ChildPerRooms) {
-		SearchHotelPage  s = new SearchHotelPage();
-		//WebElement findElement = driver.findElement(By.name("location"));
-	//selectByValue(findElement, location);	
-//	WebElement nroomnos2 = s.getNroomnos();
-	
-		implicitWait();
-		
-		s.serachHotel(location, hotel, roomType, 7, checkinDate, checkOutDate, adultsPerRooms, ChildPerRooms);
-	 
-//	s.serachHotel(location, hotel, roomType, noofRooms, checkinDate, checkOutDate, adultsPerRooms, ChildPerRooms);
+  public void userShouldSerachHotelUsingSuperDeluxe(String string, String string2, String string3, String string4, String string5, String string6, String string7,String string8) {
+	  
 	}
-
 	@Then("I should select Hotel")
 	public void i_should_select_Hotel() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+
 	}
 	
 	
