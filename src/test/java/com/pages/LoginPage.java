@@ -41,6 +41,7 @@ public class LoginPage extends FunctionalLibrary  {
 		type(getTxtUserName(),log);
 		type(getTxtPassword(),passWord);
 	click(btnLogin);
+	close();
 	}
 	
 	
