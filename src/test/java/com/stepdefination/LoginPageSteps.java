@@ -23,12 +23,16 @@ SearchHotelPage SearchHotelPage;
 	public void i_am_on_the_adactinhotelapp_login_page() {
 	driver = getDrive(); 
 	loadUrl("http://adactinhotelapp.com/");
+	
+	
+	
 	}
 
 	@When("I should enter invalid {string} and {string}")
 	public void i_should_enter_invalid_and(String userName, String passWord) {
 		LoginPage l =new LoginPage();
         l.login(userName, passWord);
+        
 	}
 
 	@When("user should serach hotel  using {string},{string},{string},{string},{string},{string},{string},{string}")

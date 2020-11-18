@@ -9,9 +9,11 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources",glue= {"com.stepdefination"}, monochrome = true, snippets = SnippetType.CAMELCASE, strict = true, plugin = { "pretty", "html:src\\test\\ressources\\reports"})
+@CucumberOptions(features = "src\\test\\resources",glue= {"com.stepdefination"}, monochrome = true, snippets = SnippetType.CAMELCASE, strict = true, plugin = { "pretty", "html:src\\test\\resources\\Reports.html"})
 public class TestRunnerClass {
 
 
+	
+	
 	
 }
